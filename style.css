@@ -93,20 +93,75 @@ body{
     cursor: pointer;
 }
 
+/* Styling for the banner */
+.banner {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .text-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .text-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .image-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
-    /* Hide the center links on small devices */
     .center ul {
         display: none;
     }
-
-    /* Show the dropdown icon on mobile */
     .dropdown {
         display: block;
     }
 
-    /* Style the dropdown icon (hamburger) */
     .dropdown-btn {
-        font-size: 35px; /* Increase icon size for visibility */
+        font-size: 35px; /
+    };
+
+    .banner {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+        padding: 20px 10px; 
+    }
+    
+    .image-content {
+        margin-bottom: 20px; 
+        justify-content: center;
+    }
+    
+    .text-content h1 {
+        font-size: 2rem; 
+    }
+    
+    .text-content p {
+        font-size: 1.2rem;
     }
 }
