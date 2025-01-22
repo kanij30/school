@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", serif;  
+    max-width: 1500px;
+    margin: auto;  
+}
+/* Styling for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffff;
+    color: white;
+}
+
+/* Left section (Logo and Name) */
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left .logo {
+    width: 40px; /* Adjust based on your logo size */
+    height: auto;
+    margin-right: 10px;
+}
+
+.left .brand-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Center section (Navigation Links) */
+.center ul {
+    display: flex;
+    list-style: none;
+}
+
+.center ul li {
+    margin: 0 15px;
+}
+
+.center ul li a {
+    text-decoration: none;
+    color: rgb(40, 111, 242);
+    font-size: 16px;
+    transition: color 0.3s;
+}
+#home{
+    color: rgb(242, 79, 20);
+}
+#admission{
+    color: violet;
+}
+.center ul li a:hover {
+    color: #3535db;
+}
+
+/* Right section (CTA Button) */
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #f1c40f;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e67e22;
+}
+
+/* Static Dropdown Icon for Small Screens */
+.dropdown {
+    display: none;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    /* Hide the center links on small devices */
+    .center ul {
+        display: none;
+    }
+
+    /* Show the dropdown icon on mobile */
+    .dropdown {
+        display: block;
+    }
+
+    /* Style the dropdown icon (hamburger) */
+    .dropdown-btn {
+        font-size: 35px; /* Increase icon size for visibility */
+    }
+}
